@@ -1,24 +1,18 @@
 <?php
-// config/database.php
 
-define('DB_HOST', 'localhost');
-define('DB_NAME', 'WBS');
-define('DB_USER', 'root');
-define('DB_PASS', '');
-
-/* ✅ ADD THIS */
-define('BASE_URL', 'http://localhost/WBS/');
+$host = "dpg-d91u61gk1i2s739s06h0-a.ohio-postgres.render.com";
+$db   = "wbs_db_2dhx";
+$user = "wbs_db_2dhx_user";
+$pass = "YOUR_PASSWORD_HERE";
+$port = "5432";
 
 try {
     $pdo = new PDO(
-        'mysql:host=' . DB_HOST . ';dbname=' . DB_NAME . ';charset=utf8mb4',
-        DB_USER,
-        DB_PASS,
-        [
-            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-            PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
-        ]
+        "pgsql:host=$host;port=$port;dbname=$db",
+        $user,
+        $pass
     );
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (PDOException $e) {
-    die('Database connection failed: ' . $e->getMessage());
+    die("Database connection failed: " . $e->getMessage());
 }
