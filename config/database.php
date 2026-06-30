@@ -1,5 +1,5 @@
 <?php
-
+define("BASE_URL", "/");
 $host = "dpg-d91u61gk1i2s739s06h0-a.ohio-postgres.render.com";
 $db   = "wbs_db_2dhx";
 $user = "wbs_db_2dhx_user";
