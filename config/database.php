@@ -3,7 +3,7 @@
 $host = "dpg-d91u61gk1i2s739s06h0-a.ohio-postgres.render.com";
 $db   = "wbs_db_2dhx";
 $user = "wbs_db_2dhx_user";
-$pass = "YOUR_PASSWORD_HERE";
+$pass = "6aL5qMnaliEEXUb9F6F4EA6VBLihdSJc";
 $port = "5432";
 
 try {
