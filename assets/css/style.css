@@ -1,0 +1,109 @@
+/* AUTH PAGE */
+.auth-split {
+    display: flex;
+    min-height: 100vh;
+    flex-wrap: wrap;
+}
+
+.auth-brand {
+    flex: 1 1 45%;
+    background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+}
+
+.auth-form {
+    flex: 1 1 55%;
+    background: #f8fafc;
+}
+
+/* NAV */
+.nav-pills .nav-link {
+    color: #64748b;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #2563eb;
+    color: white;
+}
+
+/* TABLE MOBILE */
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* BUTTONS */
+.btn {
+    white-space: nowrap;
+}
+
+/* CARD MOBILE */
+.card {
+    border-radius: 12px;
+}
+
+/* FORM MOBILE */
+.form-control,
+.form-select {
+    min-height: 45px;
+}
+
+/* MOBILE FIXES */
+@media (max-width: 991px) {
+    .auth-brand {
+        display: none !important;
+    }
+
+    .auth-form {
+        flex: 1 1 100%;
+        padding: 20px;
+    }
+
+    .container,
+    .container-fluid {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    h2, h3 {
+        font-size: 22px;
+    }
+
+    .table th,
+    .table td {
+        font-size: 13px;
+        white-space: nowrap;
+    }
+
+    .btn-sm {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+
+    .navbar-brand {
+        font-size: 18px;
+    }
+
+    .nav-link {
+        padding: 10px;
+    }
+}
+
+/* EXTRA SMALL DEVICES */
+@media (max-width: 576px) {
+    .card-body {
+        padding: 15px !important;
+    }
+
+    .btn {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .d-flex.gap-3 {
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+}

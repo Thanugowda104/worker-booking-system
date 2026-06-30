@@ -1,0 +1,6 @@
+Array
+(
+    [action] => update_booking
+    [booking_id] => 7
+    [status] => accepted
+)

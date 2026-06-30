@@ -1,0 +1,151 @@
+
+.auth-split { display: flex; min-height: 100vh; }
+.auth-brand { flex: 1 1 45%; background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%); }
+.auth-form { flex: 1 1 55%; background: #f8fafc; }
+@media (max-width: 991px) { .auth-brand { display: none !important; } }
+.nav-pills .nav-link { color: #64748b; font-weight: 500; padding: 0.5rem 1rem; border-radius: 2rem; }
+.nav-pills .nav-link.active { background-color: #2563eb; color: white; }
+
+.mobile-table table {
+    min-width: 900px;
+}
+
+@media (max-width: 768px) {
+    .mobile-table {
+        border-radius: 10px;
+    }
+
+    .mobile-table table {
+        min-width: 800px;
+    }
+
+    .mobile-table th,
+    .mobile-table td {
+        padding: 12px;
+        vertical-align: middle;
+    }
+}
+
+/* MOBILE FORM FIX */
+@media (max-width: 768px) {
+    form .row > div {
+        margin-bottom: 12px;
+    }
+
+    .form-label {
+        font-size: 14px;
+    }
+
+    .form-control,
+    .form-select,
+    textarea {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .modal-dialog {
+        margin: 10px;
+    }
+
+    .modal-content {
+        border-radius: 12px;
+    }
+
+    .modal-body {
+        padding: 15px;
+    }
+
+    .modal-footer {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .modal-footer .btn {
+        width: 100%;
+    }
+}
+
+/* DASHBOARD RESPONSIVE FIX */
+@media (max-width: 768px) {
+
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .col, .col-md-3, .col-md-4, .col-md-6 {
+        margin-bottom: 15px;
+    }
+
+    .card {
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    .card-body {
+        padding: 15px;
+    }
+
+    h1, h2, h3 {
+        font-size: 20px;
+    }
+
+    .display-4 {
+        font-size: 28px;
+    }
+
+    .btn {
+        font-size: 14px;
+    }
+}
+
+/* MOBILE TOUCH UX */
+@media (max-width: 768px) {
+
+    .btn {
+        padding: 10px 14px;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+
+    .btn-sm {
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+
+    .nav-link {
+        padding: 12px 10px;
+    }
+
+    table td button {
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .mobile-action-bar {
+        position: sticky;
+        bottom: 0;
+        background: white;
+        padding: 10px;
+        border-top: 1px solid #eee;
+        z-index: 999;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    -webkit-text-size-adjust: 100%;
+    touch-action: manipulation;
+}
+.auth-split { display: flex; min-height: 100vh; }
+.auth-brand { flex: 1; background: linear-gradient(135deg,#2563eb,#1e40af); }
+.auth-form { flex: 1; background: #f8fafc; }
+
+@media(max-width:991px){
+    .auth-brand{display:none !important;}
+}
